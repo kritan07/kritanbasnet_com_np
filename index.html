@@ -1,346 +1,227 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Kritan Basnet - Developer Portfolio">
-    <meta name="author" content="Kritan Basnet">
-
-    <title>Kritan Basnet | Developer</title>
-
+    <meta name="description" content="Kritan Basnet - Cybersecurity and Software Development Portfolio">
+    <title>Kritan Basnet | Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="navbar container">
-            <a href="#home" class="logo">Kritan<span>.</span></a>
+    <header class="navbar">
+        <a href="#" class="logo">Kritan<span>.</span></a>
 
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
-                ☰
-            </button>
-
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav id="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation">
+            ☰
+        </button>
     </header>
 
-
-    <!-- Hero -->
     <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="tag">CYBERSECURITY ENTHUSIAST / DEVELOPER</p>
 
-        <section class="hero" id="home">
-            <div class="container hero-content">
+                <h1>Hi, I'm <span>Kritan Basnet</span></h1>
 
-                <div class="hero-text">
-                    <p class="small-title">Hello, I'm</p>
+                <h2>Exploring the world of technology.</h2>
 
-                    <h1>Kritan Basnet</h1>
-
-                    <h2>
-                        Developer &amp;
-                        <span>Cybersecurity Enthusiast</span>
-                    </h2>
-
-                    <p class="hero-description">
-                        I build websites, learn programming, and explore
-                        cybersecurity. I'm continuously improving my skills
-                        and creating projects to solve real-world problems.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn primary-btn">
-                            View My Projects
-                        </a>
-
-                        <a href="#contact" class="btn secondary-btn">
-                            Contact Me
-                        </a>
-                    </div>
-                </div>
-
-                <div class="hero-card">
-                    <div class="terminal">
-                        <div class="terminal-top">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                        <div class="terminal-body">
-                            <p><span class="green">kritan</span>@portfolio:~$ whoami</p>
-                            <p class="output">Kritan Basnet</p>
-
-                            <p>
-                                <span class="green">kritan</span>@portfolio:~$
-                                skills
-                            </p>
-
-                            <p class="output">
-                                Python<br>
-                                Web Development<br>
-                                Cybersecurity<br>
-                                Linux
-                            </p>
-
-                            <p>
-                                <span class="green">kritan</span>@portfolio:~$
-                                <span class="cursor">_</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- About -->
-        <section class="section" id="about">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p>01.</p>
-                    <h2>About Me</h2>
-                </div>
-
-                <div class="about-content">
-                    <div>
-                        <p>
-                            I'm Kritan Basnet, a developer and technology
-                            enthusiast interested in programming, web
-                            development, Linux, and cybersecurity.
-                        </p>
-
-                        <p>
-                            I enjoy learning by building projects and
-                            experimenting with new technologies. My goal is
-                            to develop strong programming fundamentals and
-                            eventually use them to build practical
-                            cybersecurity tools and projects.
-                        </p>
-
-                        <p>
-                            I'm also creating educational content to share
-                            what I learn with others.
-                        </p>
-                    </div>
-
-                    <div class="about-box">
-                        <div class="about-icon">&lt;/&gt;</div>
-                        <h3>Always Learning</h3>
-                        <p>
-                            Learn → Build → Break → Fix → Repeat
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Skills -->
-        <section class="section section-alt" id="skills">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p>02.</p>
-                    <h2>My Skills</h2>
-                </div>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <div class="skill-icon">PY</div>
-                        <h3>Python</h3>
-                        <p>
-                            Programming fundamentals, automation,
-                            scripting, and project development.
-                        </p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">&lt;/&gt;</div>
-                        <h3>Web Development</h3>
-                        <p>
-                            HTML, CSS, JavaScript and responsive
-                            website development.
-                        </p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">⌘</div>
-                        <h3>Linux</h3>
-                        <p>
-                            Linux fundamentals, terminal usage,
-                            and system exploration.
-                        </p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">SEC</div>
-                        <h3>Cybersecurity</h3>
-                        <p>
-                            Learning networking, security concepts,
-                            ethical hacking, and security tools.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Projects -->
-        <section class="section" id="projects">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p>03.</p>
-                    <h2>Projects</h2>
-                </div>
-
-                <div class="projects-grid">
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="folder">📁</span>
-
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub repository">
-                                    GitHub ↗
-                                </a>
-                            </div>
-                        </div>
-
-                        <h3>Portfolio Website</h3>
-
-                        <p>
-                            A responsive personal portfolio website built
-                            with HTML, CSS, and JavaScript.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </article>
-
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="folder">📁</span>
-
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub repository">
-                                    GitHub ↗
-                                </a>
-                            </div>
-                        </div>
-
-                        <h3>Python Projects</h3>
-
-                        <p>
-                            A collection of Python projects created while
-                            learning programming and automation.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Automation</span>
-                        </div>
-                    </article>
-
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="folder">📁</span>
-
-                            <div class="project-links">
-                                <a href="#" aria-label="GitHub repository">
-                                    GitHub ↗
-                                </a>
-                            </div>
-                        </div>
-
-                        <h3>Coming Soon</h3>
-
-                        <p>
-                            More projects will be added as I continue
-                            learning and building.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>Learning</span>
-                            <span>Building</span>
-                        </div>
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Contact -->
-        <section class="section section-alt" id="contact">
-            <div class="container contact-container">
-
-                <div class="section-heading center-heading">
-                    <p>04.</p>
-                    <h2>Get In Touch</h2>
-                </div>
-
-                <p class="contact-text">
-                    I'm always interested in learning, building projects,
-                    and connecting with other developers and technology
-                    enthusiasts.
+                <p class="hero-description">
+                    BSc CSIT student passionate about cybersecurity,
+                    ethical hacking, Linux, Python, and software development.
+                    Learning every day and building something meaningful.
                 </p>
 
-                <div class="contact-buttons">
-                    <a href="mailto:your-email@example.com"
-                       class="btn primary-btn">
-                        Email Me
-                    </a>
-
-                    <a href="https://github.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn secondary-btn">
-                        GitHub
-                    </a>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
                 </div>
+            </div>
 
+            <div class="hero-card">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span></span><span></span><span></span>
+                        <p>terminal</p>
+                    </div>
+
+                    <div class="terminal-body">
+                        <p><span class="green">root@kritan</span>:~$ whoami</p>
+                        <p class="output">Kritan Basnet</p>
+
+                        <p><span class="green">root@kritan</span>:~$ interests</p>
+                        <p class="output">Cybersecurity</p>
+                        <p class="output">Ethical Hacking</p>
+                        <p class="output">Python Development</p>
+
+                        <p><span class="green">root@kritan</span>:~$ status</p>
+                        <p class="output">Always Learning_</p>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <section id="about" class="section">
+            <p class="section-label">WHO I AM</p>
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                <p>
+                    I'm Kritan Basnet from Nepal, currently studying BSc CSIT
+                    at Shikshyalaya College. I'm interested in understanding
+                    how technology works, how systems are secured, and how
+                    software can solve real-world problems.
+                </p>
+
+                <p>
+                    My current learning journey includes Python programming,
+                    C, Linux, computer networking, web development, and
+                    cybersecurity. My long-term goal is to become a skilled
+                    cybersecurity professional.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <p class="section-label">WHAT I WORK WITH</p>
+            <h2>My Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Programming, scripting, JSON, APIs</p>
+                    <div class="progress"><span style="width:60%"></span></div>
+                    <small>60 / 100</small>
+                </div>
+
+                <div class="skill-card">
+                    <h3>C Programming</h3>
+                    <p>Fundamentals, arrays, functions</p>
+                    <div class="progress"><span style="width:40%"></span></div>
+                    <small>40 / 100</small>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Linux</h3>
+                    <p>Linux commands and system basics</p>
+                    <div class="progress"><span style="width:40%"></span></div>
+                    <small>40 / 100</small>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Networking</h3>
+                    <p>Networking fundamentals and protocols</p>
+                    <div class="progress"><span style="width:40%"></span></div>
+                    <small>40 / 100</small>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <p class="section-label">WHAT I'VE BUILT</p>
+            <h2>My Projects</h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <span class="project-number">01</span>
+                    <h3>Python To-Do App</h3>
+                    <p>A command-line task manager using Python and JSON
+                       for saving and managing tasks.</p>
+                    <span class="tech">Python · JSON</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">02</span>
+                    <h3>Weather App</h3>
+                    <p>A Python application that retrieves weather
+                       information using an external API.</p>
+                    <span class="tech">Python · API</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">03</span>
+                    <h3>Student Management System</h3>
+                    <p>A basic Python project for managing student
+                       information and records.</p>
+                    <span class="tech">Python</span>
+                </article>
+
+                <article class="project-card">
+                    <span class="project-number">04</span>
+                    <h3>Calculator</h3>
+                    <p>A simple calculator project built to practise
+                       programming fundamentals.</p>
+                    <span class="tech">Python</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <p class="section-label">MY DIRECTION</p>
+            <h2>Learning Journey</h2>
+
+            <div class="journey">
+                <div class="journey-item">
+                    <span class="dot"></span>
+                    <div>
+                        <h3>Currently</h3>
+                        <p>BSc CSIT student, building foundations in
+                           programming, Linux, and networking.</p>
+                    </div>
+                </div>
+
+                <div class="journey-item">
+                    <span class="dot"></span>
+                    <div>
+                        <h3>Next Goals</h3>
+                        <p>Improve Python, learn DSA, explore web development,
+                           and practise cybersecurity labs.</p>
+                    </div>
+                </div>
+
+                <div class="journey-item">
+                    <span class="dot"></span>
+                    <div>
+                        <h3>Future Goal</h3>
+                        <p>Become a cybersecurity professional specializing
+                           in penetration testing and red teaming.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <p class="section-label">LET'S CONNECT</p>
+            <h2>Find Me Online</h2>
+            <p>Connect with me through my profiles and follow my learning journey.</p>
+
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">TryHackMe</a>
+                <a href="#" class="social-link">Hack The Box</a>
+                <a href="#" class="social-link">LeetCode</a>
+                <a href="#" class="social-link">HackerRank</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">YouTube</a>
+            </div>
+        </section>
     </main>
 
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>
-                © <span id="year"></span> Kritan Basnet.
-                Built with HTML, CSS &amp; JavaScript.
-            </p>
-        </div>
+    <footer>
+        <p>© <span id="year"></span> Kritan Basnet. Built with curiosity.</p>
+        <p class="footer-note">Keep learning. Keep building. Stay curious.</p>
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
 </html>
-```
